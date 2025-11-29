@@ -1,0 +1,36 @@
+Student Feedback Project – Full Git Process & Commands
+
+1. Create GitHub Repository
+- Go to GitHub → New Repository
+- Name: student-feedback
+- Copy repository URL
+
+2. Initialize Git Locally
+git init
+git add .
+git commit -m "Initial commit - Student Feedback Project"
+
+3. Connect Local Project to GitHub
+git remote add origin https://github.com/YOUR-USERNAME/student-feedback.git
+git branch -M main
+git push -u origin main
+
+4. Push Future Updates
+git add .
+git commit -m "Updated project files"
+git push
+
+5. Clone Repository Elsewhere
+git clone https://github.com/YOUR-USERNAME/student-feedback.git
+
+6. Verify Sync
+git pull
+
+7. Pull Before Editing
+git pull origin main
+
+8. Check Git Status
+git status
+
+9. View Commit History
+git log

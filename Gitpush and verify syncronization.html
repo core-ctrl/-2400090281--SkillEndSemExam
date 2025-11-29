@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback - Git Workflow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0a0f, #1c1b29, #111);
+            color: #fff;
+            min-height: 100vh;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #5ac8fa, #7b4dff, #ff5efc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.07);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 20px;
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            transition: transform .3s, box-shadow .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 26px;
+            background: linear-gradient(90deg, #4cc9f0, #b5179e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        code {
+            display: block;
+            background: rgba(0,0,0,0.35);
+            padding: 12px;
+            border-radius: 10px;
+            margin-top: 10px;
+            color: #bde0fe;
+            font-size: 15px;
+            white-space: pre-wrap;
+            border-left: 4px solid #4cc9f0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Student Feedback Project – Git Workflow</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h2>1️⃣ Create GitHub Repository</h2>
+        <p>Go to GitHub → New Repo → Name it <b>student-feedback</b> → Copy the URL.</p>
+    </div>
+
+    <div class="card">
+        <h2>2️⃣ Initialize Git Locally</h2>
+        <code>
+git init
+git add .
+git commit -m "Initial commit - Student Feedback Project"
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>3️⃣ Connect to GitHub</h2>
+        <code>
+git remote add origin https://github.com/YOUR-USERNAME/student-feedback.git
+git branch -M main
+git push -u origin main
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>4️⃣ Push Future Updates</h2>
+        <code>
+git add .
+git commit -m "Updated project files"
+git push
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>5️⃣ Clone Repository Elsewhere</h2>
+        <code>
+git clone https://github.com/YOUR-USERNAME/student-feedback.git
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>6️⃣ Verify Synchronization</h2>
+        <code>
+git pull
+        </code>
+        <p>If nothing updates → Repositories are synced.</p>
+    </div>
+
+    <div class="card">
+        <h2>7️⃣ Pull Latest Before Editing</h2>
+        <code>
+git pull origin main
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>8️⃣ Check Git Status</h2>
+        <code>
+git status
+        </code>
+    </div>
+
+    <div class="card">
+        <h2>9️⃣ View History</h2>
+        <code>
+git log
+        </code>
+    </div>
+
+</div>
+
+<div class="footer">© 2025 Student Feedback Project – Premium Git Documentation</div>
+
+</body>
+</html>
